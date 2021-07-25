@@ -1,4 +1,4 @@
-FROM php:fpm
+FROM php:8-fpm-buster
 
 RUN apt update -y && apt install -y libfcgi-bin &&\
     docker-php-ext-install pdo_mysql opcache &&\
