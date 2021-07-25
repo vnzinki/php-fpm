@@ -1,4 +1,4 @@
-FROM php:fpm-alpine
+FROM php:fpm
 
 RUN apt update -y && apt install -y libfcgi-bin &&\
     docker-php-ext-install pdo_mysql opcache &&\
